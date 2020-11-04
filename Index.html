@@ -1,0 +1,22 @@
+<html>
+<body>
+<p id='inlineBillingWrapper'>
+
+</p>
+</body>
+<script type="text/javascript" src="https://sandbox.accountdock.com/app.min.js"></script>
+<script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function (event) {
+            var Key_Edues = "ad_acco_xzbd5k74gvtahwso";
+            var Cus_Edues_ID = "cus_Hw8T2UWSDTYaPL";
+            var handler = AccountDock.configure({
+                key: Key_Edues,
+                customer: Cus_Edues_ID
+            });
+            if (Cus_Edues_ID == '') return;
+            handler.open({
+                container: '#inlineBillingWrapper'
+            });
+        });
+ </script>
+ </html>
